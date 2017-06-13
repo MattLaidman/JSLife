@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>JSLife</title>
+    <meta name="description" content="An Implementation of Conway's Game of Life in JavaScript.">
+    <meta name="author" content="Matt Laidman">
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div id="menu">
+      Conway's Game of Life
+      <div id="menucontrols">
+        <input type="button" id="lifeButton" value="Start"/>
+        <input type="button" id="resetButton" value="Reset"/>
+        Fast<input type="range" id="speedSlider" value="100" min="1" max="250">Slow
+      </div>
+    </div>
+
+    <div id="jslife"></div>
+
+    <script src="life.js"></script>
+  </body>
+</html>

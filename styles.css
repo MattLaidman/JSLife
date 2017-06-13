@@ -1,0 +1,46 @@
+html, body {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#menu {
+  top: 0px;
+  width: 100%;
+  height: 40px;
+  background: gray;
+  font-family: sans-serif;
+}
+
+#menucontrols {
+  float: right;
+}
+
+#jslife {
+  width: 100%;
+  height: calc(100% - 45px);
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid lightgray;
+}
+
+td {
+  width: 5px;
+  height: 5px;
+  border: 1px solid lightgray;
+}
+
+.dead:hover {
+  background: lightgray;
+}
+
+.dead {
+  background: white;
+}
+
+.alive {
+  background: black;
+}
