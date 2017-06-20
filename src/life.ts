@@ -23,14 +23,14 @@ class Board {
             tempStates.push(new Array<string>(this.width))
         }
         // Copy old states
-        for (var i = 0; i < this.height; i++) {
-            for (var j = 0; j < this.width; j++) {
+        for (let i = 0; i < this.height; i++) {
+            for (let j = 0; j < this.width; j++) {
                 tempStates[i][j] = this.cells[i][j].className;
             }
         }
         // Apply update rules
-        for (var i = 0; i < this.height; i++) {
-            for (var j = 0; j < this.width; j++) {
+        for (let i = 0; i < this.height; i++) {
+            for (let j = 0; j < this.width; j++) {
                 // Count neighbours
                 let count = 0;
                 if (this.cells[(i - 1 + this.height) % this.height][(j - 1 + this.width) % this.width].className == "alive") {
